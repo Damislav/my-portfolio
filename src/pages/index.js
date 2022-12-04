@@ -7,6 +7,7 @@ import { Section } from "../styles/GlobalComponents";
 
 const Home = () => {
   return (
+    
     <Layout title="Portfolio">
       <Section grid>
         <Hero />

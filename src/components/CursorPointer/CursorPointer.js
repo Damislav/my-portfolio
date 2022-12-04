@@ -1,9 +1,9 @@
 import { Cursor } from "custom-pointer-react";
 
-const CursorPointer = ({ children }) => {
+const CursorPointer = () => {
   return (
     <>
-      <Cursor color="white">{children}</Cursor>
+      <Cursor className="cursor-pointer" color="white" />
     </>
   );
 };

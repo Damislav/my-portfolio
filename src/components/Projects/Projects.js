@@ -11,7 +11,6 @@ import {
   TagList,
   TitleContent,
   UtilityList,
-  Img,
 } from "./ProjectsStyles";
 import {
   Section,
@@ -19,6 +18,7 @@ import {
   SectionTitle,
 } from "../../styles/GlobalComponents";
 import { projects } from "../../constants/constants";
+import Image from "next/image";
 
 const Projects = () => (
   <Section nopadding id="projects">
@@ -28,7 +28,7 @@ const Projects = () => (
       {projects.map((p, i) => {
         return (
           <BlogCard key={i}>
-            <Img src={p.image} alt={p.title} />
+            <Image width={350} height={250} src={p.image} alt={p.title} />
             <TitleContent>
               <HeaderThree lead>{p.title}</HeaderThree>
               <Hr />
