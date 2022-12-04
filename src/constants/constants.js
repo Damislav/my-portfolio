@@ -19,23 +19,23 @@ export const projects = [
     id: 1,
   },
   {
-    title: "WebRTC App",
+    title: "Comfy-Sloth",
     description:
       "This is a code repository for the corresponding YouTube video. In this tutorial, we're going to build and deploy a React Video Chat Application using WebRTC.",
-    image: "/images/3.jpg",
-    tags: ["React", "WebRTC"],
-    source: "https://google.com",
-    visit: "https://google.com",
+    image: "/images/3.png",
+    tags: ["React", "Context", "Styled Components", "Auth0", "Stripe"],
+    source: "https://github.com/Damislav/comfy-sloth",
+    visit: "https://comfy-sloth-react-app.netlify.app/",
     id: 2,
   },
   {
-    title: "Unichat",
+    title: "Unreal Development Blog",
     description:
-      "This is a code repository for the corresponding video tutorial. In this video, we will create a full Realtime Chat Application",
+      "This is my personal blog where I show my journey to learning game development with Unreal Engine",
     image: "/images/4.jpg",
-    tags: ["React", "ChatEngine", "Firebase"],
-    source: "https://google.com",
-    visit: "https://google.com",
+    tags: ["Nextjs", "GraphQL", "SCSS", "TailwindCSS", "GraphCMS"],
+    source: "https://github.com/Damislav/blog-graphql",
+    visit: "https://damislav-at-games.vercel.app/",
     id: 3,
   },
 ];
