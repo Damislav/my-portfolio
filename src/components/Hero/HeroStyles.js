@@ -20,6 +20,7 @@ export const HeroSection = styled.div`
 
 export const HeroTitle = styled.div`
   text-align: center;
+  z-index: 50;
   font-weight: 800;
   font-size: ${(props) => (props.main ? "65px" : "56px")};
   line-height: ${(props) => (props.main ? "72px" : "56px")};

@@ -3,8 +3,8 @@ import CustomCursor from "../components/CursorPointer/CursorPointer";
 export default function App({ Component, pageProps }) {
   return (
     <>
-      <CustomCursor style={{ color: "red" }} />
       <Theme>
+        <CustomCursor />
         <Component {...pageProps} />
       </Theme>
     </>
