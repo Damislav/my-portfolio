@@ -12,7 +12,8 @@ const GlobalStyles = createGlobalStyle`
   html {
     font-size: 62.5%;
     scroll-behavior: smooth !important;
-    cursor: pointer;
+    cursor: default;
+ 
   }
   body {
     font-family: ${(props) => props.theme.fonts.main};

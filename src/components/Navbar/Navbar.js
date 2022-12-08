@@ -27,10 +27,7 @@ const Navbar = () => (
         <NavWrapper>Projects</NavWrapper>
       </Link>
       <Link href="#tech" passHref legacyBehavior>
-        <NavWrapper href="#tech">Technologies</NavWrapper>
-      </Link>
-      <Link href="#skills" passHref legacyBehavior>
-        <NavWrapper href="#about">Skills</NavWrapper>
+        <NavWrapper>Technologies</NavWrapper>
       </Link>
     </Div2>
     <Div3>

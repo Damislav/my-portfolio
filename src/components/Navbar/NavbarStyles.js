@@ -3,8 +3,8 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr;
+  grid-template-columns: repeat(1, 1fr);
+  /* grid-template-rows: 1fr; */
   grid-column-gap: 2rem;
   align-items: center;
   padding: 1rem;
@@ -12,27 +12,25 @@ export const Container = styled.div`
 
   @media ${(props) => props.theme.breakpoints.sm} {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    /* grid-template-columns: repeat(5, 1fr); */
     grid-template-rows: repeat(2, 60px);
     grid-column-gap: 0.5rem;
     grid-row-gap: 0.5rem;
   }
 `;
 export const Div1 = styled.div`
-  grid-area: 1 / 1 / 2 / 2;
-  display: flex;
-  flex-direction: row;
-  align-content: center;
+  grid-area: 1 / 1 / 1 / 2;
   @media ${(props) => props.theme.breakpoints.sm} {
     grid-area: 1 / 1 / 2 / 3;
   }
 `;
 export const Div2 = styled.div`
   grid-area: 1 / 2 / 2 / 4;
-  display: flex;
-  justify-content: space-around;
+  a {
+    margin: 1rem;
+  }
+
   @media ${(props) => props.theme.breakpoints.sm} {
-    grid-area: 2 / 2 / 3 / 5;
   }
 `;
 export const Div3 = styled.div`

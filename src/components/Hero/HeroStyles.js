@@ -24,11 +24,7 @@ export const HeroTitle = styled.div`
   font-size: 65px;
   line-height: 72px;
   width: 100%;
-  color: linear-gradient(
-    121.57deg,
-    #ffffff 18.77%,
-    rgba(255, 255, 255, 0.66) 60.15%;
-  );
+  color: linear-gradient(121.57deg, #ffffff 18.77%, 60.15%;);
 
   background: transparent;
   margin-bottom: 16px;
@@ -80,7 +76,6 @@ export const HeroSpan = styled.span`
   color: rgba(255, 255, 255, 0.86);
   font-weight: bold;
   display: block;
-  text-transform
 `;
 
 export const HeroButton = styled.div`

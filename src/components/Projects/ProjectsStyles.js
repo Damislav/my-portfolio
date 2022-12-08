@@ -6,7 +6,7 @@ export const ImgContainer = styled.div`
     /* object-fit: c; */
     transition: 0.5s ease-in-out;
     overflow: hidden;
-    /* cursor: pointer !important; */
+    /* cursor: none; */
 
     &:hover {
       /* transition: 0.5s ease-in-out; */
@@ -74,10 +74,11 @@ export const Intro = styled.div`
 export const CardInfo = styled.p`
   width: 100%;
   padding: 0 50px;
+  margin-bottom: 1rem;
   color: #e4e6e7;
   font-style: 2rem;
   line-height: 24px;
-  text-align: justify;
+  text-align: left;
   @media ${(props) => props.theme.breakpoints.sm} {
     padding: 0.3rem;
   }
