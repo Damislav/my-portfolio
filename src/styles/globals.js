@@ -37,19 +37,21 @@ const GlobalStyles = createGlobalStyle`
 /* width */
 ::-webkit-scrollbar {
   width: 15px;
+ 
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px grey; 
-  border-radius: 10px;
+ 
 }
+
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  /* background: #131415;  */
+  background: #121415; 
   border:black solid 1px 
-  border-radius: 10px;
+ 
 
 }
 
@@ -74,7 +76,7 @@ const GlobalStyles = createGlobalStyle`
 background-image: url(resources/corner.png);
 background-repeat: no-repeat;
 */
-background-color: none;
+background-color: #3D3D3D;
 }
 `;
 

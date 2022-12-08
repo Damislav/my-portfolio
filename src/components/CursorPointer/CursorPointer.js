@@ -1,6 +1,11 @@
 import { Cursor } from "custom-pointer-react";
+import { CursorWrapper } from "./CursorWrapper";
 const CursorPointer = () => {
-  return <Cursor color="white" />;
+  return (
+    <CursorWrapper>
+      <Cursor  color="white" />
+    </CursorWrapper>
+  );
 };
 
 export default CursorPointer;
