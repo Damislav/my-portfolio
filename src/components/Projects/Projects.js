@@ -7,6 +7,7 @@ import {
   GridContainer,
   HeaderThree,
   Hr,
+  ImgContainer,
   Tag,
   TagList,
   TitleContent,
@@ -28,7 +29,12 @@ const Projects = () => (
       {projects.map((p, i) => {
         return (
           <BlogCard key={i}>
-            <Image width={350} height={250} src={p.image} alt={p.title} />
+            <ImgContainer
+              width={350}
+              height={250}
+              src={p.image}
+              alt={p.title}
+            />
             <TitleContent>
               <HeaderThree lead>{p.title}</HeaderThree>
               <Hr />

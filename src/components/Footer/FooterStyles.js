@@ -11,6 +11,10 @@ export const FooterWrapper = styled.section`
     padding: 0 16px 48px;
     width: calc(100vw - 32px);
   }
+  /* @media ${(props) => props.theme.breakpoints.xsm} {
+    text-align: center;
+    margin: 0 auto;
+  } */
 `;
 
 export const LinkItem = styled.a`

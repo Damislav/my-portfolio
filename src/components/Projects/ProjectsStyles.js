@@ -1,18 +1,21 @@
 import styled from "styled-components";
 
-export const ImgContainer = styled.div`
-  img {
-    border-radius: 5%;
-    /* object-fit: c; */
-    transition: 0.5s ease-in-out;
-    overflow: hidden;
-    /* cursor: none; */
+export const ImgContainer = styled.img`
+  border-radius: 5%;
+  /* object-fit: c; */
+  transition: 0.5s ease-in-out;
+  overflow: hidden;
+  /* cursor: none; */
 
-    &:hover {
-      /* transition: 0.5s ease-in-out; */
-      scale: 1.1;
-      margin: 0.2rem;
-    }
+  &:hover {
+    /* transition: 0.5s ease-in-out; */
+    scale: 1.1;
+    margin: 0.2rem;
+  }
+  @media ${(props) => props.theme.breakpoints.xsm} {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain;
   }
 `;
 
@@ -108,6 +111,7 @@ export const TagList = styled.ul`
   display: flex;
   justify-content: space-around;
   padding: 2rem;
+  flex-wrap: wrap;
 `;
 export const Tag = styled.li`
   color: #d8bfbf;

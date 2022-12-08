@@ -20,7 +20,9 @@ const Home = () => {
           <BgAnimation />
         </BackgroundAnimationWrapper>
       </Section>
+
       <Projects />
+
       <Technologies />
     </Layout>
   );
