@@ -4,18 +4,22 @@ export const ImgContainer = styled.img`
   border-radius: 5%;
   /* object-fit: c; */
   transition: 0.5s ease-in-out;
-  overflow: hidden;
-  /* cursor: none; */
 
+  /* cursor: none; */
+  overflow: hidden;
   &:hover {
     /* transition: 0.5s ease-in-out; */
     scale: 1.1;
     margin: 0.2rem;
   }
-  @media ${(props) => props.theme.breakpoints.xsm} {
-    width: 100% !important;
-    height: 100% !important;
+
+  @media ${(props) => props.theme.breakpoints.sm} {
     object-fit: contain;
+    overflow: hidden;
+  }
+  @media ${(props) => props.theme.breakpoints.xsm} {
+    object-fit: contain;
+    overflow: hidden;
   }
 `;
 
@@ -34,6 +38,12 @@ export const GridContainer = styled.section`
   }
 `;
 export const BlogCard = styled.div`
+  .img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
   border-radius: 10px;
   box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
   text-align: center;

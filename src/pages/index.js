@@ -22,7 +22,6 @@ const Home = () => {
       </Section>
 
       <Projects />
-
       <Technologies />
     </Layout>
   );

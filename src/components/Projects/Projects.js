@@ -29,12 +29,14 @@ const Projects = () => (
       {projects.map((p, i) => {
         return (
           <BlogCard key={i}>
-            <ImgContainer
-              width={350}
-              height={250}
-              src={p.image}
-              alt={p.title}
-            />
+            <div className="img">
+              <ImgContainer
+                width={350}
+                height={250}
+                src={p.image}
+                alt={p.title}
+              />
+            </div>
             <TitleContent>
               <HeaderThree lead>{p.title}</HeaderThree>
               <Hr />

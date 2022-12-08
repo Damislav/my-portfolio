@@ -1,8 +1,11 @@
 import { Cursor } from "custom-pointer-react";
-import { useEffect } from "react";
-
+import styles from "./CursorPointer.module.css";
 const CursorPointer = () => {
-  return <Cursor className="cursor" color="white" />;
+  return (
+    <div className={styles.dot}>
+      <Cursor color="white" />
+    </div>
+  );
 };
 
 export default CursorPointer;

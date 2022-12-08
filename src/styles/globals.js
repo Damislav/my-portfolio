@@ -13,9 +13,11 @@ const GlobalStyles = createGlobalStyle`
     font-size: 62.5%;
     scroll-behavior: smooth !important;
     cursor: default;
+    overflow-x:hidden
  
   }
   body {
+    overflow: hidden
     font-family: ${(props) => props.theme.fonts.main};
     font-size: 1.6rem;
     background: ${(props) => props.theme.colors.background1};
