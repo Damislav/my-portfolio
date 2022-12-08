@@ -4,25 +4,24 @@ import {
   SectionTitle,
 } from "../../styles/GlobalComponents";
 import Button from "../../styles/GlobalComponents/Button";
-import { LeftSection } from "./HeroStyles";
+import { HeroSection, HeroSpan, HeroText, HeroTitle } from "./HeroStyles";
 
 const Hero = (props) => {
   return (
     <>
-      <Section row nopadding>
-        <LeftSection>
-          <SectionTitle main center>
-            Welcome To <br />
-            My Personal Portfolio
-          </SectionTitle>
-          <SectionText>
-            The purpose of JavaScript Mastery is to help aspiring and
-            established developers to take their development skills to the next
-            level and build awesome apps.
-          </SectionText>
-          <Button onClick={props.handleClick}>Learn More</Button>{" "}
-        </LeftSection>
-      </Section>
+      <HeroSection>
+        <HeroTitle main center>
+          <HeroSpan> I am </HeroSpan>
+          <br /> Ivan Damjanović
+        </HeroTitle>
+        <HeroText>
+          My passion is coding and designing websites, and mobile applications.
+        </HeroText>
+
+        <span style={{ display: "flex", justifyContent: "center" }}>
+          <Button onClick={props.handleClick}>Learn More</Button>
+        </span>
+      </HeroSection>
     </>
   );
 };

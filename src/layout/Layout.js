@@ -9,20 +9,10 @@ export const Layout = ({ children, title }) => {
     <>
       <Head>
         <title>{title}</title>
-        <meta property="og:title" content="The Rock" />
-
-        <meta
-          name="description"
-          content="Check out iPhone 12 XR Pro and iPhone 12 Pro Max. Visit your local store and for expert advice."
-        />
-        <meta
-          property="og:description"
-          content="And a social description for our cool page"
-        />
-        <meta
-          property="og:image"
-          content="https://example.com/images/cool-page.jpg"
-        />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta property="og:title" content={title} key={title} />
+        <meta name="author" content="JIvan Damjanović" />
+        <meta name="description" content="Web Developer Portfolio" />
       </Head>
       <Container>
         <Navbar />

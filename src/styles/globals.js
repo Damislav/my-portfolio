@@ -11,8 +11,8 @@ const GlobalStyles = createGlobalStyle`
   }
   html {
     font-size: 62.5%;
-    scroll-behavior: smooth;
-        cursor: none;
+    scroll-behavior: smooth !important;
+    cursor: none;
   }
   body {
     font-family: ${(props) => props.theme.fonts.main};
@@ -60,7 +60,7 @@ const GlobalStyles = createGlobalStyle`
 }
 
 ::-webkit-scrollbar-thumb:active {
-  background: #fff; 
+    background: #fff; 
     cursor: pointer !important;
 }
 
