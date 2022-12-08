@@ -47,7 +47,7 @@ const GlobalStyles = createGlobalStyle`
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #131415; 
+  /* background: #131415;  */
   border:black solid 1px 
   border-radius: 10px;
 
@@ -61,9 +61,21 @@ const GlobalStyles = createGlobalStyle`
 
 ::-webkit-scrollbar-thumb:active {
     background: #fff; 
+    opacity: .2;
+  
     cursor: pointer !important;
-}
+} 
 
+
+/* remove bottom right square */
+
+::-webkit-scrollbar-corner {
+/*
+background-image: url(resources/corner.png);
+background-repeat: no-repeat;
+*/
+background-color: none;
+}
 `;
 
 export default GlobalStyles;

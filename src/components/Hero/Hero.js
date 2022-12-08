@@ -4,7 +4,13 @@ import {
   SectionTitle,
 } from "../../styles/GlobalComponents";
 import Button from "../../styles/GlobalComponents/Button";
-import { HeroSection, HeroSpan, HeroText, HeroTitle } from "./HeroStyles";
+import {
+  HeroButton,
+  HeroSection,
+  HeroSpan,
+  HeroText,
+  HeroTitle,
+} from "./HeroStyles";
 
 const Hero = (props) => {
   return (
@@ -18,9 +24,9 @@ const Hero = (props) => {
           My passion is coding and designing websites, and mobile applications.
         </HeroText>
 
-        <span style={{ display: "flex", justifyContent: "center" }}>
+        <HeroButton>
           <Button onClick={props.handleClick}>Learn More</Button>
-        </span>
+        </HeroButton>
       </HeroSection>
     </>
   );

@@ -78,3 +78,16 @@ export const HeroText = styled.p`
 export const HeroSpan = styled.span`
   font-size: 3rem;
 `;
+
+export const HeroButton = styled.div`
+  display: flex;
+  justify-content: center;
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    max-width: 670px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    max-width: 670px;
+  }
+`;
