@@ -10,15 +10,15 @@ import { Section } from "../styles/GlobalComponents";
 const Home = () => {
   return (
     <Layout title="Portfolio">
-      <Section flex center>
-        <BackgroundAnimationWrapper left>
-          <BgAnimation />
-        </BackgroundAnimationWrapper>
-        <Hero />
-        <BackgroundAnimationWrapper right>
-          <BgAnimation />
-        </BackgroundAnimationWrapper>
-      </Section>
+      {/* <Section flex center> */}
+      <BackgroundAnimationWrapper left>
+        <BgAnimation />
+      </BackgroundAnimationWrapper>
+      <Hero />
+      <BackgroundAnimationWrapper right>
+        <BgAnimation />
+      </BackgroundAnimationWrapper>
+      {/* </Section> */}
       <Projects />
       <Skills />
       <Technologies />

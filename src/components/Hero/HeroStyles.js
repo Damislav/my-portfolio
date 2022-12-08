@@ -20,18 +20,17 @@ export const HeroSection = styled.div`
 
 export const HeroTitle = styled.div`
   text-align: center;
-  z-index: 50;
   font-weight: 800;
-  font-size: ${(props) => (props.main ? "65px" : "56px")};
-  line-height: ${(props) => (props.main ? "72px" : "56px")};
+  font-size: 65px;
+  line-height: 72px;
   width: 100%;
-  background: linear-gradient(
+  color: linear-gradient(
     121.57deg,
     #ffffff 18.77%,
-    rgba(255, 255, 255, 0.66) 60.15%
+    rgba(255, 255, 255, 0.66) 60.15%;
   );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+
+  background: transparent;
   margin-bottom: 16px;
   padding: ${(props) => (props.main ? "58px 0 16px" : "0")};
 
@@ -45,8 +44,8 @@ export const HeroTitle = styled.div`
   @media ${(props) => props.theme.breakpoints.sm} {
     font-size: 32px;
     line-height: 40px;
-    font-size: ${(props) => (props.main ? "28px" : "32px")};
-    line-height: ${(props) => (props.main ? "32px" : "40px")};
+    font-size: ${(props) => (props.main ? "48px" : "32px")};
+
     margin-bottom: 8px;
     padding: ${(props) => (props.main ? "16px 0 8px" : "0")};
     max-width: 100%;
@@ -60,7 +59,7 @@ export const HeroText = styled.p`
   line-height: 40px;
   font-weight: 300;
   padding-bottom: 3.6rem;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.7);
 
   @media ${(props) => props.theme.breakpoints.md} {
     max-width: 670px;
@@ -77,7 +76,11 @@ export const HeroText = styled.p`
 `;
 
 export const HeroSpan = styled.span`
-  font-size: 3rem;
+  font-size: 2.5rem;
+  color: rgba(255, 255, 255, 0.86);
+  font-weight: bold;
+  display: block;
+  text-transform
 `;
 
 export const HeroButton = styled.div`

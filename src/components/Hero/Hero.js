@@ -18,7 +18,7 @@ const Hero = (props) => {
       <HeroSection>
         <HeroTitle main center>
           <HeroSpan> I am </HeroSpan>
-          <br /> Ivan Damjanović
+          Ivan Damjanović
         </HeroTitle>
         <HeroText>
           My passion is coding and designing websites, and mobile applications.

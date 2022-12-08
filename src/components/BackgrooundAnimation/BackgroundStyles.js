@@ -5,4 +5,5 @@ export const BackgroundAnimationWrapper = styled.div`
   height: 300px;
   right: ${(props) => props.right && 0};
   left: ${(props) => props.left && 0};
+  
 `;
