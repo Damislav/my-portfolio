@@ -83,6 +83,7 @@ export const CompanyContainer = styled.div`
 `;
 
 export const Slogan = styled.p`
+  font-family: ${(props) => props.theme.fonts.main};
   color: rgba(255, 255, 255, 0.5);
   min-width: 280px;
   letter-spacing: 0.02em;

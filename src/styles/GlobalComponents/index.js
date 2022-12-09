@@ -53,6 +53,7 @@ export const SectionTitle = styled.h2`
 `;
 
 export const SectionText = styled.p`
+  font-family: ${(props) => props.theme.fonts.title};
   max-width: 800px;
   font-size: 24px;
   line-height: 40px;
@@ -102,7 +103,6 @@ export const SectionSubText = styled.p`
   font-size: 18px;
   line-height: 32px;
   color: rgba(255, 255, 255, 0.75);
-
   @media ${(props) => props.theme.breakpoints.md} {
     max-width: 672px;
     font-size: 16px;
@@ -200,7 +200,7 @@ export const ButtonBack = styled.div`
   }
 `;
 
-export const ButtonFront = styled.button`
+export const ButtonFront = styled.a`
   border: none;
   border-radius: 50px;
   color: #fff;

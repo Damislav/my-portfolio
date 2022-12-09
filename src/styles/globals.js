@@ -18,19 +18,22 @@ const GlobalStyles = createGlobalStyle`
   }
   body {
     overflow: hidden
-    font-family: ${(props) => props.theme.fonts.main};
+    font-family: ${(props) => props.theme.fonts.main} !important; 
     font-size: 1.6rem;
     background: ${(props) => props.theme.colors.background1};
     color: ${(props) => props.theme.colors.primary1};
     
   h1,h2,h3,h4,h5,h6,button {
     font-family: ${(props) => props.theme.fonts.title};
+ 
   }
   a {
     text-decoration: none;
+    font-family: ${(props) => props.theme.fonts.title};
   }
   li{
     list-style: none;
+    font-family: ${(props) => props.theme.fonts.title};
   }
 }
 

@@ -1,8 +1,3 @@
-import {
-  Section,
-  SectionText,
-  SectionTitle,
-} from "../../styles/GlobalComponents";
 import Button from "../../styles/GlobalComponents/Button";
 import {
   HeroButton,
@@ -25,7 +20,7 @@ const Hero = (props) => {
         </HeroText>
 
         <HeroButton>
-          <Button onClick={props.handleClick}>Learn More</Button>
+          <Button href="#projects">Learn More</Button>
         </HeroButton>
       </HeroSection>
     </>

@@ -2,24 +2,18 @@ import styled from "styled-components";
 
 export const ImgContainer = styled.img`
   border-radius: 5%;
-  /* object-fit: c; */
   transition: 0.5s ease-in-out;
-
-  /* cursor: none; */
   overflow: hidden;
   &:hover {
-    /* transition: 0.5s ease-in-out; */
     scale: 1.1;
     margin: 0.2rem;
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
     object-fit: contain;
-    overflow: hidden;
   }
   @media ${(props) => props.theme.breakpoints.xsm} {
     object-fit: contain;
-    overflow: hidden;
   }
 `;
 
@@ -85,6 +79,7 @@ export const Intro = styled.div`
 `;
 
 export const CardInfo = styled.p`
+  font-family: ${(props) => props.theme.fonts.title};
   width: 100%;
   padding: 0 50px;
   margin-bottom: 1rem;
@@ -92,9 +87,6 @@ export const CardInfo = styled.p`
   font-style: 2rem;
   line-height: 24px;
   text-align: left;
-  @media ${(props) => props.theme.breakpoints.sm} {
-    padding: 0.3rem;
-  }
 `;
 
 export const UtilityList = styled.ul`
