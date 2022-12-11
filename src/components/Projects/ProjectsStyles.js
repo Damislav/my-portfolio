@@ -57,6 +57,7 @@ export const HeaderThree = styled.h3`
   font-weight: 500;
   letter-spacing: 2px;
   color: #9cc9e3;
+  margin-top: 0.5rem;
   padding: 0.5rem 0;
   font-size: ${(props) => (props.lead ? "3rem" : "2rem")};
 `;
@@ -82,11 +83,12 @@ export const Intro = styled.div`
 export const CardInfo = styled.p`
   font-family: ${(props) => props.theme.fonts.title};
   width: 100%;
-  padding: 0 50px;
+  /* padding: 0 50px; */
   margin-bottom: 1rem;
   color: #e4e6e7;
   line-height: 24px;
   text-align: left;
+  text-align: center;
 `;
 
 export const UtilityList = styled.ul`

@@ -10,7 +10,7 @@ export const Layout = ({ children, title }) => {
       <Head>
         <title>{title}</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta charset="UTF-8" />
+        <meta charSet="UTF-8" />
         <meta property="og:title" content={title} key={title} />
         <meta name="author" content="Ivan Damjanović" />
         <meta name="description" content="Web Developer Portfolio" />
