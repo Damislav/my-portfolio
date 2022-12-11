@@ -17,7 +17,6 @@ import {
   SectionTitle,
 } from "../../styles/GlobalComponents";
 import { projects } from "../../constants/constants";
-import Image from "next/image";
 
 const Projects = () => (
   <Section nopadding id="projects">

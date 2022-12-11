@@ -30,7 +30,7 @@ const Navbar = () => (
       </Link>
     </Div2>
     <Div3>
-      <SocialIcons href="https://google.com">
+      <SocialIcons href="https://github.com/Damislav">
         <AiFillGithub size="3rem" />
       </SocialIcons>
     </Div3>

@@ -4,17 +4,37 @@ export const HeroSection = styled.div`
   width: 100%;
   margin: 0 auto;
   text-align: center;
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    display: flex;
+
+    flex-direction: column;
+    margin: 0 auto;
+  }
   @media ${(props) => props.theme.breakpoints.sm} {
-    width: 80%;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
   }
+`;
+export const HeroSpan = styled.span`
+  width: 100%;
+  text-align: center;
+  font-size: 3rem;
+  color: rgba(255, 255, 255, 0.86);
+  font-weight: bold;
+  display: block;
+  margin: -15px;
+  animation-name: example;
+  animation-duration: 4s;
   @media ${(props) => props.theme.breakpoints.md} {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
+    font-size: 2rem;
+
+    margin: -8px;
+  }
+  @media ${(props) => props.theme.breakpoints.xsm} {
+    font-size: 1.5rem;
+    padding-right: 1rem;
   }
 `;
 
@@ -27,7 +47,7 @@ export const HeroTitle = styled.h2`
   color: linear-gradient(121.57deg, #ffffff 18.77%, 60.15%;);
   background: transparent;
   margin-bottom: 16px;
-  padding: ${(props) => (props.main ? "58px 0 16px" : "0")};
+  padding: ${(props) => (props.main ? "48px 0 16px" : "0")};
   @media ${(props) => props.theme.breakpoints.md} {
     font-size: ${(props) => (props.main ? "56px" : "48px")};
     line-height: ${(props) => (props.main ? "56px" : "48px")};
@@ -36,12 +56,13 @@ export const HeroTitle = styled.h2`
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    font-size: 32px;
     line-height: 40px;
     font-size: ${(props) => (props.main ? "48px" : "32px")};
-    margin-bottom: 8px;
     padding: ${(props) => (props.main ? "16px 0 8px" : "0")};
     max-width: 100%;
+  }
+  @media ${(props) => props.theme.breakpoints.xsm} {
+    font-size: 4rem;
   }
 `;
 export const HeroText = styled.p`
@@ -67,13 +88,6 @@ export const HeroText = styled.p`
     line-height: 24px;
     padding-bottom: 16px;
   }
-`;
-
-export const HeroSpan = styled.span`
-  font-size: 3rem;
-  color: rgba(255, 255, 255, 0.86);
-  font-weight: bold;
-  display: block;
 `;
 
 export const HeroButton = styled.div`

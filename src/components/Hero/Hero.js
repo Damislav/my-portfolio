@@ -7,7 +7,7 @@ import {
   HeroTitle,
 } from "./HeroStyles";
 
-const Hero = (props) => {
+const Hero = () => {
   return (
     <>
       <HeroSection>
